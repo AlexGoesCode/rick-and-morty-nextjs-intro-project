@@ -10,7 +10,11 @@ const RnMList = async () => {
       <h2>Characters</h2>
       <ul>
         {results.results.map((character) => {
-          return <li key={character.id}>{character.name}</li>;
+          return (
+            <li key={character.id}>
+              <link href={`/characters/${character.id}`}>{character.name}</link>
+            </li>
+          );
         })}
       </ul>
     </div>
