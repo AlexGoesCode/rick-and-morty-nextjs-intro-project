@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const RnMList = async () => {
@@ -12,7 +13,7 @@ const RnMList = async () => {
         {results.results.map((character) => {
           return (
             <li key={character.id}>
-              <link href={`/characters/${character.id}`}>{character.name}</link>
+              <Link href={`/characters/${character.id}`}>{character.name}</Link>
             </li>
           );
         })}
