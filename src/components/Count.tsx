@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+'use client'
+import React, { useState } from 'react'
 
 const Count = () => {
   const [count, setCount] = useState(0);
@@ -7,7 +8,7 @@ const Count = () => {
       <button onClick={() => setCount(count + 1)}>Count goes up!</button>
       <h2>{count}</h2>
     </div>
-  );
-};
+  )
+}
 
-export default Count;
+export default Count

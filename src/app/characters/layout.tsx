@@ -8,5 +8,6 @@ export default function characterLayout({
       {children}
       <div>this is a footer for characters routes</div>
     </>
+    
   );
 }
